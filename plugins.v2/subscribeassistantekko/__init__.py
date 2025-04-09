@@ -3857,6 +3857,8 @@ class SubscribeAssistantEkko(_PluginBase):
         if mediainfo.type == MediaType.TV:
             subscribe_dict["lack_episode"] = subscribe_dict.get("total_episode")
 
+        # tmdb剧集组和当前版本疑似不兼容，暂时移除
+        subscribe_dict.pop('episode_group', None)
         # 添加订阅
         sid, err_msg = self.subscribe_oper.add(mediainfo=mediainfo,
                                                **subscribe_dict)
