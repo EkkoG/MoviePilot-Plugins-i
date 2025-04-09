@@ -38,21 +38,21 @@ from app.utils.string import StringUtils
 lock = threading.RLock()
 
 
-class SubscribeAssistant(_PluginBase):
+class SubscribeAssistantEkko(_PluginBase):
     # 插件名称
-    plugin_name = "订阅助手"
+    plugin_name = "订阅助手-Ekko修改版"
     # 插件描述
     plugin_desc = "多场景管理订阅，实现订阅种子删除以及自动待定/暂停/洗版。"
     # 插件图标
     plugin_icon = "https://raw.githubusercontent.com/InfinityPacer/MoviePilot-Plugins/main/icons/subscribeassistant.png"
     # 插件版本
-    plugin_version = "2.7.1"
+    plugin_version = "2.7.2"
     # 插件作者
     plugin_author = "InfinityPacer"
     # 作者主页
     author_url = "https://github.com/InfinityPacer"
     # 插件配置项ID前缀
-    plugin_config_prefix = "subscribeassistant_"
+    plugin_config_prefix = "subscribeassistantekko_"
     # 加载顺序
     plugin_order = 10
     # 可使用的用户级别
